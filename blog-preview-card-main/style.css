@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap");
 
 :root {
   --yellow: hsl(47, 88%, 63%);
@@ -6,12 +6,12 @@
   --grey: hsl(0, 0%, 50%);
   --black: hsl(0, 0%, 7%);
 }
-
+/* 
 @font-face {
   font-family: Figtree;
-  src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
   font-weight: 600, 800;
-}
+}  */
 
 * {
   margin: 0;
@@ -58,6 +58,7 @@ main div {
 
 main p:nth-child(5) {
   color: var(--grey);
+  font-weight: 400;
 }
 main h6 {
   display: inline-flex;
