@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+:root {
+  --Darkcyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --Verydarkblue: hsl(212, 21%, 14%);
+  --Darkgrayishblue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  max-height: 50%;
+  background-color: var(--White);
+  border-radius: 10px;
+}
+.desktop {
+  border-radius: 10px 0 0 10px;
+}
+.info {
+  display: grid;
+  margin: 20px;
+}
+.mobile {
+  display: none;
+}
+.info h5 {
+  font-family: "Montserrat", arial;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  color: gray;
+  font-size: 10px;
+}
+
+.info h1 {
+  font-family: "Fraunces";
+  font-size: 1.7em;
+  line-height: 0.9em;
+}
+
+.info p {
+  font-family: "Montserrat", arial;
+  font-size: 13px;
+  font-weight: 500;
+  color: gray;
+  line-height: 1.4em;
+}
+
+.info h4 {
+  font-family: "Fraunces";
+  font-size: 1.2em;
+  color: var(--Darkcyan);
+  display: inline-flex;
+  align-items: center;
+  padding-bottom: 14px;
+}
+.info h4 span {
+  font-family: "Fraunces";
+  font-size: 0.6em;
+  color: gray;
+  text-decoration: line-through;
+  padding-left: 10px;
+}
+
+.info button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 5px;
+  background-color: var(--Darkcyan);
+  color: var(--White);
+  font-family: "Montserrat";
+}
+
+.info svg {
+  margin-right: 8px;
+}
+.info button:hover {
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .mobile {
+    display: block;
+    border-radius: 10px 10px 0 0;
+  }
+  .desktop {
+    display: none;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-height: 500px;
+  }
+  .info {
+    height: 100%;
+  }
+  .info button {
+    padding: 7px 0;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
